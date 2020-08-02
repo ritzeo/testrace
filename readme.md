@@ -8,9 +8,10 @@ A convenient script to test your server's speed that links to nodes in China
 
 based on [bestrace](http://www.ipip.net)
 
-## update
+## updates
 
-use the latest bestrace version
+1. use the latest bestrace
+2. update ips
 
 ## Usage
 no much things to explain  
