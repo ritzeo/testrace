@@ -8,9 +8,8 @@ echo -e "${Green_font}
 #======================================
 # Project: testrace
 # Version: 1.2
-# Author: nanqinlang
-# Blog:   https://sometimesnaive.org
-# Github: https://github.com/nanqinlang
+# Author: hijk, based on nanqinlang
+# website:   https://hijk.pp.ua
 #======================================
 ${Font_suffix}"
 
@@ -33,7 +32,7 @@ directory(){
 	cd /home/testrace
 }
 install(){
-	[[ ! -d /home/testrace/besttrace ]] && wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/besttrace.tar.gz && tar -zxf besttrace.tar.gz && rm besttrace.tar.gz
+	[[ ! -d /home/testrace/besttrace ]] && wget https://raw.githubusercontent.com/hijkpw/testrace/master/besttrace.tar.gz && tar -zxf besttrace.tar.gz && rm besttrace.tar.gz
 	[[ ! -d /home/testrace/besttrace ]] && echo -e "${Error} download failed, please check!" && exit 1
 	chmod -R +x /home/testrace
 }
