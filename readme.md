@@ -8,6 +8,10 @@ A convenient script to test your server's speed that links to nodes in China
 
 based on [bestrace](http://www.ipip.net)
 
+## update
+
+use the latest bestrace version
+
 ## Usage
 no much things to explain  
 cuz it's a script with Chinese language
@@ -15,7 +19,7 @@ cuz it's a script with Chinese language
 just one thing... you must run it with `bash`  
 like
 ```bash
-wget https://raw.githubusercontent.com/nanqinlang-script/testrace/master/testrace.sh
+wget https://raw.githubusercontent.com/hijkpw/testrace/master/testrace.sh
 bash testrace.sh
 ```
 
