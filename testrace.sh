@@ -15,10 +15,15 @@ ${Font_suffix}"
 
 check_system(){
 	if   [[ ! -z "`cat /etc/issue | grep -iE "debian"`" ]]; then
+        apt update
+        apt install -y unzip
 		apt-get install traceroute mtr -y
 	elif [[ ! -z "`cat /etc/issue | grep -iE "ubuntu"`" ]]; then
+        apt update
+        apt install -y unzip
 		apt-get install traceroute mtr -y
 	elif [[ ! -z "`cat /etc/redhat-release | grep -iE "CentOS"`" ]]; then
+        yum install -y unzip
 		yum install traceroute mtr -y
 	else
 		echo -e "${Error} system not support!" && exit 1
@@ -32,7 +37,7 @@ directory(){
 	cd /home/testrace
 }
 install(){
-	[[ ! -d /home/testrace/besttrace ]] && wget https://raw.githubusercontent.com/hijkpw/testrace/master/besttrace.tar.gz && tar -zxf besttrace.tar.gz && rm besttrace.tar.gz
+	[[ ! -d /home/testrace/besttrace ]] && wget -O besttrace.zip https://cdn.ipip.net/17mon/besttrace4linux.zip && unzip besttrace.zip -d besttrace && rm besttrace.zip
 	[[ ! -d /home/testrace/besttrace ]] && echo -e "${Error} download failed, please check!" && exit 1
 	chmod -R +x /home/testrace
 }
